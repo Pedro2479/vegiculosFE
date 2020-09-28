@@ -51,8 +51,8 @@ function  AddRuedas(){
    for(let x=0;x <wellh.length;x++){
  
   
-    let brand= document.getElementById(`plateWell1` +x);
-    let diameter= document.getElementById(`diameterW1 ` +x );
+    let brand=(<HTMLInputElement>document.getElementById("plateWell" +x)).value;
+    let diameter= (<HTMLInputElement>document.getElementById("diameterW" +x)).value;
   
       car.wheels[x];
     

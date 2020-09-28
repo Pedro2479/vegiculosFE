@@ -25,8 +25,8 @@ function AddRuedas() {
     var vruedas = document.getElementById("boton").style.display = 'none';
     var wellh = document.getElementsByClassName("caradd");
     for (var x = 0; x < wellh.length; x++) {
-        var brand = document.getElementById("plateWell1" + x);
-        var diameter = document.getElementById("diameterW1 " + x);
+        var brand = document.getElementById("plateWell" + x).value;
+        var diameter = document.getElementById("diameterW" + x).value;
         car.wheels[x];
         car.addWheel(car.wheels[x]);
         var inter = document.createElement('div');
