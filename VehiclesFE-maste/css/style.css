@@ -1,0 +1,21 @@
+.imagen{
+background-image: url(../img/image_original.jpg);
+background-repeat: no-repeat;
+
+}
+.invalid-feedback{
+    color: yellow;
+    font-size: 1em;
+}
+.colorw{
+    margin-top:2em;
+    background-color: rgba(208, 214, 245, 0.7);
+    color: black;
+}
+
+.colorw2{
+    
+    margin-top:2em;
+    background-color: rgba(208, 214, 245, 0.7);
+   color:black;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    #ruedas {
+      display: none;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body class="imagen">
+  <div class="container-fluid inline-flex" id="fo">
+    <h4 id="carInfo" class="text-center">Cars</h4>
+    <div class="row justify-content-center">
+      <div class="col-md-4 car-add" id="car-add">
+        <div class="formgroup">
+          <label for="plate">Plate</label>
+          <input type="text" class="form-control" id="plate" name="plate" />
+          <div class="invalid-feedback" id="errorMatricula"></div>
+        </div>
+        <div class="formgroup">
+          <label for="brand">Brand</label>
+          <input type="text" class="form-control mt-2" id="brand" name="brand" />
+          <div class="invalid-feedback" id="errorBrand"></div>
+        </div>
+        <div class="formgroup">
+          <label for="color">Color</label>
+          <input type="text" class="form-control mt-2" id="color" name="color" />
+          <div class="invalid-feedback" id="errorColor"></div>
+          <div></div>
+        </div>
+        <input type="submit" class="btn btn-primary mt-3 justify-content-center" onclick="createCar();" />
+      </div>
+    </div>
+  </div>
+
+
+  <!--     //////////////////////////////////////////////////////////////////////////77-->
+
+
+  <div class="inline-flex mt-4" id="ruedas">
+    <h4 class="text-center">UHEELS</h4>
+    <div class="row justify-content-center">
+      <div class="col-md-8 caradd" id="caradd">
+        <div class="formgroup col-ms-4 d-inline-flex mt-4">
+
+          <label for="plateWell">Plate well 1
+
+            <input type="text" class="form-control" id="plateWell1" name="plateWell1" />
+            <div class="invalid-feedback" id="errorPlate1"></div>
+          </label>
+        </div>
+
+        <div class="formgroup col-ms-4 d-inline-flex mt-4">
+
+          <label for="diameterWell">Diameter well 1
+            <input type="text" class="form-control" id="diameterW1" name="diameterWell1" />
+            <div class="invalid-feedback" id="errorDiameter1"></div>
+          </label>
+        </div>
+
+        <div class="formgroup col-ms-4 d-inline-flex mt-4">
+          <label for="plateWell2">plate well 2
+            <input type="text" class="form-control" id="plateWell2" name="plateWell2" />
+            <div class="invalid-feedback" id="errorPlate2"></div>
+          </label>
+        </div>
+        <div class="formgroup col-ms-4 d-inline-flex mt-4">
+          <label for="diameterWell2">Diameter well 2
+            <input type="text" class="form-control" id="diameterW2" name="diameterWell2" />
+            <div class="invalid-feedback" id="errorDiameter2"></div>
+          </label>
+        </div>
+
+        <div class="formgroup col-ms-4 d-inline-flex mt-4">
+          <label for="plateWell3">plate well 3
+            <input type="text" class="form-control" id="plateWell3" name="plateWell3" />
+            <div class="invalid-feedback" id="errorPlate3"></div>
+          </label>
+        </div>
+        <div class="formgroup col-ms-4 d-inline-flex mt-4">
+          <label for="diameterWell3">Diameter well 3
+            <input type="text" class="form-control" id="diameterW3" name="diameterWell3" />
+            <div class="invalid-feedback" id="errorDiameter3"></div>
+          </label>
+        </div>
+        <div class="formgroup col-ms-4 d-inline-flex mt-4">
+          <label for="plateWell4">plate well 4
+            <input type="text" class="form-control" id="plateWell4" name="plateWell4" />
+            <div class="invalid-feedback" id="errorPlate4"></div>
+          </label>
+        </div>
+        <div class="formgroup col-ms-4 d-inline-flex">
+          <label for="diameterWell4">Diameter well 4
+            <input type="text" class="form-control" id="diameterW4" name="diameterWell4" />
+            <div class="invalid-feedback" id="errorDiameter4"></div>
+          </label>
+        </div>
+
+        <input type="submit" class="btn btn-primary mt-3" onclick="AddRuedas();" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="vista" class="container-fluid col-md-8 justify-content-center"></div>
+  </div>
+
+  <div class="row">
+    <div id="vistaRuedas" class="container-fluid col-md-8"></div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../controllers/controller.js"></script>
+<script src="../models/car.js"></script>
+<script src="../models/wheel.js"></script>
+
+</html>
